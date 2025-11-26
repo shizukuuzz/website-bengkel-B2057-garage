@@ -8,11 +8,10 @@
     "scheme": "bengkelapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
-
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.bengkelapp"
     },
-
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/b2057.png",
@@ -27,18 +26,33 @@
               "host": "verify"
             }
           ],
-          "category": ["BROWSABLE", "DEFAULT"]
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        },
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "bengkelapp",
+              "host": "verify"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
         }
       ],
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.bengkelapp"
     },
-
     "web": {
       "output": "static",
       "favicon": "./assets/images/b2057.png"
     },
-
     "plugins": [
       "expo-router",
       [
@@ -52,9 +66,9 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      "expo-web-browser"
     ],
-
     "extra": {
       "router": {
         "origin": false
@@ -63,7 +77,6 @@
         "projectId": "frfbqylvqcrtatsceiai"
       }
     },
-
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
